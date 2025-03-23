@@ -1,0 +1,127 @@
+gallery.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery</title>
+</head>
+<body>
+    <h1>Car Gallery</h1>
+    <p>Explore our gallery of cars. Find images and details of various car models.</p>
+</body>
+</html>
+<section id="gallery">
+             
+</div>   <h2>Car Gallery</h2>
+<div class="gallery">
+    <div class="image-gallery" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <div style="flex: 0 0 48%; margin-bottom: 20px;">
+            <img src="bmw.jpg" alt="BMW" style="width: 100%;">
+            <p style="color:black;">BMW</p>
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 20px;">
+            <img src="audi.jpg" alt="Audi" style="width: 100%;">
+            <p style="color:black;">Audi</p>
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 20px;">
+            <img src="chevrolet corvette.jpg" alt="Chevrolet corvette" style="width: 100%;">
+            <p style="color:black;">Chevrolet corvette</p>
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 20px;">
+            <img src="hyundai elantra.jpg" alt="Hyundai Elantra" style="width: 100%;">
+            <p style="color:black;">Hyundai Elantra</p>
+        </div>
+        
+        <!-- Hidden cars -->
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="dodge challenger.jpg" alt="Dodge challenger" style="width: 100%;">
+            <p style="color:black;">Dodge challenger</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="ford mustang.jpg" alt="Ford Mustang" style="width: 100%;">
+            <p style="color:black;">Ford Mustang</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="ferrari.jpg" alt="Ferrari" style="width: 100%;">
+            <p style="color:black;">Ferrari</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="mercedes.jpg" alt="Mercedes" style="width: 100%;">
+            <p style="color:black;">Mercedes</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="nissan gtr.jpg" alt="Nissan GTR" style="width: 100%;">
+            <p style="color:black;">Nissan GTR</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="range rover.jpg" alt="Range Rover" style="width: 100%;">
+            <p style="color:black;">Range Rover</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="mesarati.jpg" alt="Mesarati" style="width: 100%;">
+            <p style="color:black;">Mesarati</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="porsche.jpg" alt="Porsche" style="width: 100%;">
+            <p style="color:black;">Porsche</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="toyota supra.jpg" alt="Toyota Supra" style="width: 100%;">
+            <p style="color:black;">Toyota Supra</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="aston martin.jpg" alt="Aston martin" style="width: 100%;">
+            <p style="color:black;">Aston martin</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="buggati.jpg" alt="Buggati" style="width: 100%;">
+            <p style="color:black;">Buggati</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="pagani.jpg" alt="Pagani" style="width: 100%;">
+            <p style="color:black;">Pagani</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="tesla.jpg" alt="Tesla" style="width: 100%;">
+            <p style="color:black;">Tesla</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="jaguar.jpg" alt="Jaguar" style="width: 100%;">
+            <p style="color:black;">Jaguar</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="land cruiser.jpg" alt="Land cruiser" style="width: 100%;">
+            <p style="color:black;">Land cruiser</p>
+        </div>
+        <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+            <img src="Fortuner.jpg" alt="Fortuner" style="width: 100%;">
+            <p style="color:black;">Fortuner</p>
+        </div>
+    </div>
+    <button id="see-more" onclick="showMoreCars()" style="width: 100%; margin-top: 20px;">See More</button>
+    <button id="see-less" onclick="hideExtraCars()" style="width: 100%; margin-top: 20px; display: none;">See Less</button>
+</div>
+
+<script>
+function showMoreCars() {
+    var hiddenCars = document.querySelectorAll('.hidden');
+    hiddenCars.forEach(function(car) {
+        car.style.display = 'block';
+    });
+    document.getElementById('see-more').style.display = 'none';
+    document.getElementById('see-less').style.display = 'block';
+}
+
+function hideExtraCars() {
+    var hiddenCars = document.querySelectorAll('.hidden');
+    hiddenCars.forEach(function(car) {
+        car.style.display = 'none';
+    });
+    document.getElementById('see-more').style.display = 'block';
+    document.getElementById('see-less').style.display = 'none';
+}
+</script>
+
+
+</section>

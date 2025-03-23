@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Specification</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #ccc; /* Grey color for cards */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .see-more, .see-less {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Specification</h1>
+    <p>Check out the specifications of different car models. Find detailed information on engine, dimensions, and features.</p>
+    <section id="specification">
+        <h2>Car Specification</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Car 1: BMW</h3>
+                <p>Engine: Inline 6-Cylinder, 300 HP</p>
+                <p>Transmission: 6-Speed Manual</p>
+                <p>Fuel Efficiency: 22 MPG City / 30 MPG Highway</p>
+            </div>
+            <div class="card">
+                <h3>Car 2: Audi</h3>
+                <p>Engine: V8, 350 HP</p>
+                <p>Transmission: 7-Speed Automatic</p>
+                <p>Fuel Efficiency: 20 MPG City / 28 MPG Highway</p>
+            </div>
+            <div class="card">
+                <h3>Car 3: Chevrolet Corvette</h3>
+                <p>Engine: V8, 450 HP</p>
+                <p>Transmission: 8-Speed Automatic</p>
+                <p>Fuel Efficiency: 16 MPG City / 25 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 4: Hyundai Elantra</h3>
+                <p>Engine: Inline 4-Cylinder, 147 HP</p>
+                <p>Transmission: CVT</p>
+                <p>Fuel Efficiency: 33 MPG City / 43 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 5: Dodge Challenger</h3>
+                <p>Engine: V8, 485 HP</p>
+                <p>Transmission: 6-Speed Manual</p>
+                <p>Fuel Efficiency: 15 MPG City / 23 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 6: Ford Mustang</h3>
+                <p>Engine: V8, 450 HP</p>
+                <p>Transmission: 6-Speed Manual</p>
+                <p>Fuel Efficiency: 14 MPG City / 22 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 7: Ferrari</h3>
+                <p>Engine: V12, 789 HP</p>
+                <p>Transmission: 7-Speed Automatic</p>
+                <p>Fuel Efficiency: 12 MPG City / 18 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 8: Mercedes</h3>
+                <p>Engine: V8, 503 HP</p>
+                <p>Transmission: 9-Speed Automatic</p>
+                <p>Fuel Efficiency: 18 MPG City / 25 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 9: Nissan GTR</h3>
+                <p>Engine: V6, 565 HP</p>
+                <p>Transmission: 6-Speed Automatic</p>
+                <p>Fuel Efficiency: 16 MPG City / 22 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 10: Range Rover</h3>
+                <p>Engine: V8, 518 HP</p>
+                <p>Transmission: 8-Speed Automatic</p>
+                <p>Fuel Efficiency: 14 MPG City / 19 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 11: Maserati</h3>
+                <p>Engine: V8, 580 HP</p>
+                <p>Transmission: 8-Speed Automatic</p>
+                <p>Fuel Efficiency: 13 MPG City / 20 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 12: Porsche</h3>
+                <p>Engine: Flat 6-Cylinder, 443 HP</p>
+                <p>Transmission: 7-Speed Manual</p>
+                <p>Fuel Efficiency: 18 MPG City / 24 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 13: Toyota Supra</h3>
+                <p>Engine: Inline 6-Cylinder, 382 HP</p>
+                <p>Transmission: 8-Speed Automatic</p>
+                <p>Fuel Efficiency: 24 MPG City / 31 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 14: Aston Martin</h3>
+                <p>Engine: V8, 503 HP</p>
+                <p>Transmission: 8-Speed Automatic</p>
+                <p>Fuel Efficiency: 18 MPG City / 24 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 15: Bugatti</h3>
+                <p>Engine: W16, 1500 HP</p>
+                <p>Transmission: 7-Speed Automatic</p>
+                <p>Fuel Efficiency: 8 MPG City / 13 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 16: Pagani</h3>
+                <p>Engine: V12, 791 HP</p>
+                <p>Transmission: 7-Speed Manual</p>
+                <p>Fuel Efficiency: 10 MPG City / 15 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 17: Tesla</h3>
+                <p>Engine: Electric, 1020 HP</p>
+                <p>Transmission: Single-Speed</p>
+                <p>Fuel Efficiency: 120 MPGe City / 112 MPGe Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 18: Jaguar</h3>
+                <p>Engine: V6, 380 HP</p>
+                <p>Transmission: 8-Speed Automatic</p>
+                <p>Fuel Efficiency: 20 MPG City / 28 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 19: Land Cruiser</h3>
+                <p>Engine: V8, 381 HP</p>
+                <p>Transmission: 6-Speed Automatic</p>
+                <p>Fuel Efficiency: 13 MPG City / 18 MPG Highway</p>
+            </div>
+            <div class="card hidden">
+                <h3>Car 20: Toyota Fortuner</h3>
+                <p>Engine: V6, 270 HP</p>
+                <p>Transmission: 6-Speed Automatic</p>
+                <p>Fuel Efficiency: 14 MPG City / 20 MPG Highway</p>
+            </div>
+        </div>
+        <button id="see-more-btn" class="see-more" onclick="seeMore()">See More</button>
+        <button id="see-less-btn" class="see-less" onclick="seeLess()" style="display: none;">See Less</button>
+    </section>
+    <script>
+        function seeMore() {
+            var moreCards = document.querySelectorAll('.hidden');
+            moreCards.forEach(function(card) {
+                card.classList.remove('hidden');
+            });
+            document.getElementById('see-more-btn').style.display = 'none';
+            document.getElementById('see-less-btn').style.display = 'block';
+        }
+        
+        function seeLess() {
+            var allCards = document.querySelectorAll('.grid .card');
+            for (var i = 3; i < allCards.length; i++) {
+                allCards[i].classList.add('hidden');
+            }
+            document.getElementById('see-more-btn').style.display = 'block';
+            document.getElementById('see-less-btn').style.display = 'none';
+        }
+
+        // Ensure hidden cards remain hidden on page load
+        window.addEventListener('load', function() {
+            var moreCards = document.querySelectorAll('.hidden');
+            moreCards.forEach(function(card) {
+                card.classList.add('hidden');
+            });
+        });
+</script>

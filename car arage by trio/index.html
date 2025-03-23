@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Garage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+        }
+        header .logo img {
+            max-width: 100px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgba(234, 241, 243, 0.886);
+        }
+        .hero-image {
+            position: relative;
+            text-align: center;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hero-image h1 {
+            font-family: 'Pacifico', cursive;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(248, 245, 245);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero-image p {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(248, 245, 245);
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        #home img {
+            width: 80%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            margin: 5px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+            flex: 1 1 30%;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgba(173, 170, 170, 0.2);
+            margin: 10px;
+            text-align: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        section#guide {
+            background: url('path/to/background-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: rgb(233, 241, 242);
+            padding: 20px;
+        }
+        #guide h2 {
+            color: black;
+        }
+        .guide-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(106, 108, 107, 0.402);
+            border-radius: 10px;
+        }
+        .guide-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .guide-item div {
+            flex: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #7d7d7e;
+            position: relative;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        .see-more {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #7c7d80;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Car Garage by Trio">
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Navigation Menu</title>
+            <style>
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+        
+                nav ul li {
+                    display: inline;
+                    margin-right: 15px;
+                }
+        
+                nav ul li a {
+                    text-decoration: none;
+                    color: #000;
+                }
+        
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li><a href="home.html" target="_blank">Home</a></li>
+                    <li><a href="gallery.html" target="_blank">Car Gallery</a></li>
+                    <li><a href="specification.html" target="_blank">Car Specification</a></li>
+                    <li><a href="guide.html" target="_blank">Buying Guide</a></li>
+                    <li><a href="faqs.html" target="_blank">FAQs</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </nav>
+          
+          
+    </header>
+    <header class="hero-image">
+        <img src="main image.jpg"alt="Cars Garage by Trio">
+        <h1>Cars Garage by Trio</h1>
+        <p>Arfa, Kashaf, Sumbal: The trio that puts the 'care' in car care!</p>
+    </header>
+</body>
+</html>
+
+<section id="video">
+    <h2>Introduction Video</h2>
+    <video width="80%" controls>
+        <source src=video2.mp4> width="50%"  
+        Your browser does not support the video tag.
+    </video>
+</section> 
+    <script>
+        function seeMore() {
+            var moreCars = document.querySelectorAll('.hidden');
+            for (var i = 0; i < moreCars.length; i++) {
+                moreCars[i].classList.remove('hidden');
+            }
+            document.getElementById('see-more-btn').style.display = 'none';
+        }
+    </script>
+<section id="gallery">
+             
+                        </div>   <h2>Car Gallery</h2>
+                        <div class="gallery">
+                            <div class="image-gallery" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                                <div style="flex: 0 0 48%; margin-bottom: 20px;">
+                                    <img src="bmw.jpg" alt="BMW" style="width: 100%;">
+                                    <p style="color:black;">BMW</p>
+                                </div>
+                                <div style="flex: 0 0 48%; margin-bottom: 20px;">
+                                    <img src="audi.jpg" alt="Audi" style="width: 100%;">
+                                    <p style="color:black;">Audi</p>
+                                </div>
+                                <div style="flex: 0 0 48%; margin-bottom: 20px;">
+                                    <img src="Chevrolet corvette.jpg" alt="Chevrolet corvette" style="width: 100%;">
+                                    <p style="color:black;">Chevrolet corvette</p>
+                                </div>
+                                <div style="flex: 0 0 48%; margin-bottom: 20px;">
+                                    <img src="Hyundai Elantra.jpg" alt="Hyundai Elantra" style="width: 100%;">
+                                    <p style="color:black;">Hyundai Elantra</p>
+                                </div>
+                                
+                                <!-- Hidden cars -->
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Dodge challenger.jpg" alt="Dodge challenger" style="width: 100%;">
+                                    <p style="color:black;">Dodge challenger</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Ford Mustang.jpg" alt="Ford Mustang" style="width: 100%;">
+                                    <p style="color:black;">Ford Mustang</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Ferrari.jpg" alt="Ferrari" style="width: 100%;">
+                                    <p style="color:black;">Ferrari</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="mercedes.jpg" alt="Mercedes" style="width: 100%;">
+                                    <p style="color:black;">Mercedes</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Nissan GTR.jpg" alt="Nissan GTR" style="width: 100%;">
+                                    <p style="color:black;">Nissan GTR</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Range Rover.jpg" alt="Range Rover" style="width: 100%;">
+                                    <p style="color:black;">Range Rover</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Mesarati.jpg" alt="Mesarati" style="width: 100%;">
+                                    <p style="color:black;">Mesarati</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Porsche.jpg" alt="Porsche" style="width: 100%;">
+                                    <p style="color:black;">Porsche</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Toyota Supra.jpg" alt="Toyota Supra" style="width: 100%;">
+                                    <p style="color:black;">Toyota Supra</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Aston martin.jpg" alt="Aston martin" style="width: 100%;">
+                                    <p style="color:black;">Aston martin</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Buggati.jpg" alt="Buggati" style="width: 100%;">
+                                    <p style="color:black;">Buggati</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Pagani.jpg" alt="Pagani" style="width: 100%;">
+                                    <p style="color:black;">Pagani</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Tesla.jpg" alt="Tesla" style="width: 100%;">
+                                    <p style="color:black;">Tesla</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Jaguar.jpg" alt="Jaguar" style="width: 100%;">
+                                    <p style="color:black;">Jaguar</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Land cruiser.jpg" alt="Land cruiser" style="width: 100%;">
+                                    <p style="color:black;">Land cruiser</p>
+                                </div>
+                                <div class="hidden" style="flex: 0 0 48%; margin-bottom: 20px; display: none;">
+                                    <img src="Fortuner.jpg" alt="Fortuner" style="width: 100%;">
+                                    <p style="color:black;">Fortuner</p>
+                                </div>
+                            </div>
+                            <button id="see-more" onclick="showMoreCars()" style="width: 100%; margin-top: 20px;">See More</button>
+                            <button id="see-less" onclick="hideExtraCars()" style="width: 100%; margin-top: 20px; display: none;">See Less</button>
+                        </div>
+                        
+                        <script>
+                        function showMoreCars() {
+                            var hiddenCars = document.querySelectorAll('.hidden');
+                            hiddenCars.forEach(function(car) {
+                                car.style.display = 'block';
+                            });
+                            document.getElementById('see-more').style.display = 'none';
+                            document.getElementById('see-less').style.display = 'block';
+                        }
+                        
+                        function hideExtraCars() {
+                            var hiddenCars = document.querySelectorAll('.hidden');
+                            hiddenCars.forEach(function(car) {
+                                car.style.display = 'none';
+                            });
+                            document.getElementById('see-more').style.display = 'block';
+                            document.getElementById('see-less').style.display = 'none';
+                        }
+                        </script>
+                        
+                    
+            </section>
+    <section id="specification">
+        <h2>Car Specification</h2>
+        <div class="grid">
+            <script>
+                function seeMore() {
+                    var moreCards = document.querySelectorAll('.hidden');
+                    moreCards.forEach(function(card) {
+                        card.classList.remove('hidden');
+                    });
+                    document.getElementById('see-more-btn').style.display = 'none';
+                    document.getElementById('see-less-btn').style.display = 'block';
+                }
+        
+                function seeLess() {
+                    var allCards = document.querySelectorAll('.card');
+                    for (var i = 3; i < allCards.length; i++) {
+                        if (!allCards[i].classList.contains('hidden')) {
+                            allCards[i].classList.add('hidden');
+                        }
+                    }
+                    document.getElementById('see-more-btn').style.display = 'block';
+                    document.getElementById('see-less-btn').style.display = 'none';
+                }
+        
+                // Ensure hidden cards remain hidden on page load
+                window.addEventListener('load', function() {
+                    var moreCards = document.querySelectorAll('.hidden');
+                    moreCards.forEach(function(card) {
+                        card.classList.add('hidden');
+                    });
+                });
+            </script>
+    
+                <div class="card">
+                    <h3>Car 1: BMW</h3>
+                    <p>Engine: Inline 6-Cylinder, 300 HP</p>
+                    <p>Transmission: 6-Speed Manual</p>
+                    <p>Fuel Efficiency: 22 MPG City / 30 MPG Highway</p>
+                </div>
+                <div class="card">
+                    <h3>Car 2: Audi</h3>
+                    <p>Engine: V8, 350 HP</p>
+                    <p>Transmission: 7-Speed Automatic</p>
+                    <p>Fuel Efficiency: 20 MPG City / 28 MPG Highway</p>
+                </div>
+                <div class="card">
+                    <h3>Car 3: Chevrolet Corvette</h3>
+                    <p>Engine: V8, 450 HP</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Fuel Efficiency: 16 MPG City / 25 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 4: Hyundai Elantra</h3>
+                    <p>Engine: Inline 4-Cylinder, 147 HP</p>
+                    <p>Transmission: CVT</p>
+                    <p>Fuel Efficiency: 33 MPG City / 43 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 5: Dodge Challenger</h3>
+                    <p>Engine: V8, 485 HP</p>
+                    <p>Transmission: 6-Speed Manual</p>
+                    <p>Fuel Efficiency: 15 MPG City / 23 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 6: Ford Mustang</h3>
+                    <p>Engine: V8, 450 HP</p>
+                    <p>Transmission: 6-Speed Manual</p>
+                    <p>Fuel Efficiency: 14 MPG City / 22 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 7: Ferrari</h3>
+                    <p>Engine: V12, 789 HP</p>
+                    <p>Transmission: 7-Speed Automatic</p>
+                    <p>Fuel Efficiency: 12 MPG City / 18 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 8: Mercedes</h3>
+                    <p>Engine: V8, 503 HP</p>
+                    <p>Transmission: 9-Speed Automatic</p>
+                    <p>Fuel Efficiency: 18 MPG City / 25 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 9: Nissan GTR</h3>
+                    <p>Engine: V6, 565 HP</p>
+                    <p>Transmission: 6-Speed Automatic</p>
+                    <p>Fuel Efficiency: 16 MPG City / 22 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 10: Range Rover</h3>
+                    <p>Engine: V8, 518 HP</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Fuel Efficiency: 14 MPG City / 19 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 11: Maserati</h3>
+                    <p>Engine: V8, 580 HP</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Fuel Efficiency: 13 MPG City / 20 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 12: Porsche</h3>
+                    <p>Engine: Flat 6-Cylinder, 443 HP</p>
+                    <p>Transmission: 7-Speed Manual</p>
+                    <p>Fuel Efficiency: 18 MPG City / 24 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 13: Toyota Supra</h3>
+                    <p>Engine: Inline 6-Cylinder, 382 HP</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Fuel Efficiency: 24 MPG City / 31 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 14: Aston Martin</h3>
+                    <p>Engine: V8, 503 HP</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Fuel Efficiency: 18 MPG City / 24 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 15: Bugatti</h3>
+                    <p>Engine: W16, 1500 HP</p>
+                    <p>Transmission: 7-Speed Automatic</p>
+                    <p>Fuel Efficiency: 8 MPG City / 13 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 16: Pagani</h3>
+                    <p>Engine: V12, 791 HP</p>
+                    <p>Transmission: 7-Speed Manual</p>
+                    <p>Fuel Efficiency: 10 MPG City / 15 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 17: Tesla</h3>
+                    <p>Engine: Electric, 1020 HP</p>
+                    <p>Transmission: Single-Speed</p>
+                    <p>Fuel Efficiency: 120 MPGe City / 112 MPGe Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 18: Jaguar</h3>
+                    <p>Engine: V6, 380 HP</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Fuel Efficiency: 20 MPG City / 28 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 19: Land Cruiser</h3>
+                    <p>Engine: V8, 381 HP</p>
+                    <p>Transmission: 6-Speed Automatic</p>
+                    <p>Fuel Efficiency: 13 MPG City / 18 MPG Highway</p>
+                </div>
+                <div class="card hidden">
+                    <h3>Car 20: Toyota Fortuner</h3>
+                    <p>Engine: V6, 270 HP</p>
+                    <p>Transmission: 6-Speed Automatic</p>
+                    <p>Fuel Efficiency: 14 MPG City / 20 MPG Highway</p>
+                </div>
+            </div>
+            <button id="see-more-btn" class="see-more" onclick="seeMore()">See More</button>
+            <button id="see-less-btn" class="see-less" onclick="seeLess()" style="display: none;">See Less</button>
+        </div>
+        
+        
+            
+    </section>
+    <section id="video">
+        <h2>Introduction Video</h2>
+        <video width="80%" height="50%" controls>
+            <source src=video.mp4> width="50%" height=50%
+            Your browser does not support the video tag.
+        </video>
+    </section>    
+    <section id="guide">
+        <h2>Car Buying Guide</h2>
+        <style>
+            .guide-item-icon {
+              font-size: 2rem; /* Adjust the value to make the icons larger */
+            }
+          </style>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">💰</span>
+            <h3>Set Your Budget</h3>
+            <p>Determine how much you can afford to spend on a car. Consider the total cost of ownership, including insurance, maintenance, fuel, and taxes.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">🏦</span>
+            <h3>Shop for a Loan</h3>
+            <p>If you need financing, shop around for the best loan rates. Check with banks, credit unions, and online lenders to find the best deal.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">💸</span>
+            <h3>Determine Other Ownership Costs</h3>
+            <p>Consider additional costs such as insurance, registration, maintenance, and fuel. These can add up and impact your overall budget.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">🚗</span>
+            <h3>Find the Right Car for You</h3>
+            <p>Research different car models that fit your needs and preferences. Consider factors such as size, fuel efficiency, safety features, and reliability.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">📞</span>
+            <h3>Contact the Seller or Visit a Dealership</h3>
+            <p>Once you've narrowed down your options, contact the seller or visit a dealership to get more information and schedule a test drive.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">🔍</span>
+            <h3>Inspect and Test-Drive the Car</h3>
+            <p>Thoroughly inspect the car and take it for a test drive. Pay attention to how it handles, the comfort of the ride, and any unusual noises.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">🛡️</span>
+            <h3>Determine Which Warranties Are Right for You</h3>
+            <p>Consider the warranties offered by the manufacturer and dealership. Decide if you need additional coverage or extended warranties.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">💬</span>
+            <h3>Negotiate the Best Price</h3>
+            <p>Don't be afraid to negotiate the price. Do your research and be prepared to walk away if the deal isn't right for you.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">✍️</span>
+            <h3>Finalize the Purchase</h3>
+            <p>Once you've agreed on a price, finalize the purchase. Make sure all paperwork is in order and that you understand the terms of the sale.</p>
+          </div>
+          
+          <div class="guide-item">
+            <span class="guide-item-icon">🎉</span>
+            <h3>Enjoy Your New Car</h3>
+            <p>Congratulations! You've successfully navigated the car buying process. Enjoy your new ride and drive safely.</p>
+          </div>
+          
+    </section>
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <div>
+            <h3>What is the warranty period for the cars?</h3>
+            <p>Our cars come with a standard manufacturer warranty. The duration varies by brand and model, typically ranging from 3 to 5 years or up to 60,000 miles.</p>
+        </div>
+        <div>
+            <h3>Can I customize the features of my car?</h3>
+            <p>Yes, customization options are available for most models. You can choose from various packages and add-ons to tailor the car to your preferences.</p>
+        </div>
+        <div>
+            <h3>Do you offer financing options?</h3>
+            <p>Yes, we provide flexible financing options to suit your budget. Our finance team will work with you to find the best
+        </div>
+        <div>
+            <h3>Are test drives available?</h3>
+            <p>Absolutely! You can schedule a test drive for any of the cars we have in our inventory. Just contact us to set up an appointment.</p>
+        </div>
+        <div>
+            <h3>What maintenance services do you offer?</h3>
+            <p>We offer a comprehensive range of maintenance services, including oil changes, tire rotations, brake inspections, and more. Our certified technicians are here to keep your car running smoothly.</p>
+        </div>
+    </section>
+  <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your next car is waiting for you here...</h1>
+                <button>979 963 Offers</button>
+            </div>
+            <div class="hero-image">
+                <img src="car logos.jpg" alt="Person holding car images">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@dynamictrio612.com | Phone: +923152458514, +923246110258, +923184916642 </p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Cars Garage | Designed by: Arfa, Kashaf, Sumbal</p>
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Our Car Guide</h1>
+    <p>This is the home page. Here you can find an overview of what our site offers.</p>
+</body>
+</html>
+<section id="home">
+    <h2>Welcome to Cars Garage</h2>
+    <img src="C:\Users\dell\Desktop\BS IT (3 semester)\IMG-20250307-WA0028.jpg" alt="New Image">
+    <p>Your one-stop solution for car maintenance, repairs, and upgrades.</p>
+</section>
+<script>
+    function seeMore() {
+        var moreCars = document.querySelectorAll('.hidden');
+        for (var i = 0; i < moreCars.length; i++) {
+            moreCars[i].classList.remove('hidden');
+        }
+        document.getElementById('see-more-btn').style.display = 'none';
+    }
+</script>
